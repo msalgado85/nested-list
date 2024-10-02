@@ -131,7 +131,12 @@ vindicate the vigilant and the virtuous.
 Verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you
 and you may call me V."""
 
-
+text2= tuple(list(text))
+print(text2)
+occurance = text2.count('v')
+occurance2 = text2.count('V')
+totalv = int(occurance) + int(occurance2)
+print(totalv)
 # Convert the text to a tuple of characters
 
 
