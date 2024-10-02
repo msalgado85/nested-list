@@ -76,67 +76,67 @@
 # Tuples are immutable
 # Tuples are defined by parentheses ()
 #example of tuples
-tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
-tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
-tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
-tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
+# tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
+# tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
+# tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
+# tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
 
 
-#access elements in a tuple
-print(tuple1[0]) #outputs 1
-print(tuple2[1]) #outputs banana
-print(tuple3[2]) #outpts 3
-print(tuple4)
-#find the length of a tuple
-print(len(tuple1))
-print(len(tuple2))
-print(len(tuple3))
-print(len(tuple4))
+# #access elements in a tuple
+# print(tuple1[0]) #outputs 1
+# print(tuple2[1]) #outputs banana
+# print(tuple3[2]) #outpts 3
+# print(tuple4)
+# #find the length of a tuple
+# print(len(tuple1))
+# print(len(tuple2))
+# print(len(tuple3))
+# print(len(tuple4))
 
-#count the number of occurrences of an element in a tuple
-print(tuple4.count(3)) #outputs 2
-print(tuple4.count(6)) #output 0
+# #count the number of occurrences of an element in a tuple
+# print(tuple4.count(3)) #outputs 2
+# print(tuple4.count(6)) #output 0
 
-#find the index of an element in a tuple
-print(tuple1.index(3)) #outputs 2
-print(tuple2.index('banana')) #outputs 1
+# #find the index of an element in a tuple
+# print(tuple1.index(3)) #outputs 2
+# print(tuple2.index('banana')) #outputs 1
 
-#convert a tuple to a list
-print(list(tuple1))
+# #convert a tuple to a list
+# print(list(tuple1))
 
-#convert a list to a tuple
+# #convert a list to a tuple
 
-print(tuple(list(tuple1)))
-
-
-
+# print(tuple(list(tuple1)))
 
 
 
-#######################tuples challenge#####################
-# Challenge: Count the number of occurrences of the character 'v' in the text below.
-# The text is converted to a tuple of characters and the target characters are 'v' and 'V'.
-# The result is output to the console.
-#queue the videos(2)
-text = """Voilà! In view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of Fate.
-This visage, no mere veneer of vanity, is a vestige of the vox populi, now vacant, vanished. However, this valorous visitation
-of a by-gone vexation stands vivified, and has vowed to vanquish these venal and virulent vermin vanguarding vice and
-vouchsafing the violently vicious and voracious violation of volition.
 
 
-The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day
-vindicate the vigilant and the virtuous.
+
+# #######################tuples challenge#####################
+# # Challenge: Count the number of occurrences of the character 'v' in the text below.
+# # The text is converted to a tuple of characters and the target characters are 'v' and 'V'.
+# # The result is output to the console.
+# #queue the videos(2)
+# text = """Voilà! In view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of Fate.
+# This visage, no mere veneer of vanity, is a vestige of the vox populi, now vacant, vanished. However, this valorous visitation
+# of a by-gone vexation stands vivified, and has vowed to vanquish these venal and virulent vermin vanguarding vice and
+# vouchsafing the violently vicious and voracious violation of volition.
 
 
-Verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you
-and you may call me V."""
+# The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day
+# vindicate the vigilant and the virtuous.
 
-text2= tuple(list(text))
-print(text2)
-occurance = text2.count('v')
-occurance2 = text2.count('V')
-totalv = int(occurance) + int(occurance2)
-print(totalv)
+
+# Verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you
+# and you may call me V."""
+
+# text2= tuple(list(text))
+# print(text2)
+# occurance = text2.count('v')
+# occurance2 = text2.count('V')
+# totalv = int(occurance) + int(occurance2)
+# print(totalv)
 # Convert the text to a tuple of characters
 
 
@@ -165,17 +165,24 @@ print(totalv)
 
 
 sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(sample_list[0]) #output 1,2,3
+print(sample_list[1]) #output 4 5 6 
+print(sample_list[2])
 # get length of the list
 print(len(sample_list)) # Output: 3
 #this is called a nested list
 # Extract and print the second element from the first list
-
-
+print(sample_list[0][2]) #outputs 3
+print(sample_list[2][2]) #outputs 9
+print(sample_list[2][0]) #outputs 7
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
-
+print(sample_list_of_fruit["fruits"][1]) #you get banana
+print(sample_list_of_fruit["fruits"][2]) #outputs cherry
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
+print(sample_list_of_lists["lists"][1][2]) #outputs 6
+print(sample_list_of_lists["lists"][2][2]) #outputs 9
 # Extract and print the third element from the second list
 
 
@@ -183,7 +190,9 @@ sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 
 sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
+print(sample_list_of_dicts["dicts"][1]["age"])
 
+print(sample_list_of_dicts["dicts"][2]["name"])
 
 
 
